@@ -29,6 +29,23 @@
         </div>
       </nav>
     </header>
+      <h2>Login puslapis</h2>
+  <form action="personalBlogPage.html">
+      <div>
+          <label for="vardas">Vardas</label>
+          <input type="text" name="vardas" id="vardas" required pattern="[A-Za-z]+" required title="iveskite varda naudodami tik raides" placeholder="Vardas">
+      </div>
+      <div>
+          <label>Slaptazodis</label>
+          <input type="password" name="password" required pattern=".{7,12}" required title="7 to 12 characters">
+      </div>
+      <div>
+          <label>El.pastas</label>
+          <input type="email" name="email" id="email" required>
+      </div>
+      <div>
+        <button type="pateikti">submit</button>
+    </div>
     <footer class="footer">
       <div id="Kontaktai"></div>
       <small>

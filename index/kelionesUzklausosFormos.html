@@ -21,7 +21,6 @@
       </div>
       <h1>MANDARIN TRAVEL</h1>
       <div>
-        <button type="link">Sign Up</button>
         <a href="loginFormPage.html"><button type="link">Log In</button></a>
       </div>
       <nav>
@@ -30,6 +29,155 @@
         </div>
       </nav>
     </header>
+    <form action="index.html" method="get>
+      <h2>Prisijungimas</h2>
+      <div>
+        <label>Vardas</label>
+        <input
+          type="name"
+          name="name"
+          id="name"
+          required
+          pattern="[A-Za-z]+"
+          required
+          title="iveskite varda naudodami tik raides"
+          placeholder="Vardas"
+        />
+        <label>El.pastas</label>
+        <input type="email" name="email" id="email" required />
+      </div>
+      <div>
+        <label>Telefonas</label>
+        <input
+          type="tel"
+          name="telefonas"
+          id="telefonas"
+          required
+          pattern="[0-9]{3}-[0-9]{1}-[0-9]{4}-[0-9]{3}"
+          required
+          title="iveskite telefono numeri tokia tvarka 3 skaiciai atskiriama bruksniu 1 skaicius atskiriama bruksniu 4 skaiciai atskiriama bruksniu 3 skaiciai"
+          placeholder="370-6-1772-484"
+        />
+        <label for="male">Lytis:</label>
+        <input type="radio" name="gender" id="male" required />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" />
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="dog" />
+        <label for="dog">Animal</label>
+        <input type="radio" name="gender" id="other" />
+        <label for="other">Other</label>
+      </div>
+      <div>
+        <label>Miestas:</label>
+        <select name="city" if="city" required>
+          <option label="---"></option>
+          <optgroup label="Turkija">
+            <option label="Stambulas" value="stambulas">stambulas</option>
+            <option label="Izmiras" value="izmiras">izmiras</option>
+          </optgroup>
+          <optgroup label="Graikija">
+            <option label="Atenai" value="atenai">atenai</option>
+            <option label="Edesa" value="edesa">edesa</option>
+          </optgroup>
+          <optgroup label="Japonija">
+            <option label="Obu" value="obu">obu</option>
+            <option label="Kijosu" value="kijosu">kijosu</option>
+          </optgroup>
+        </select>
+        <label>Biletu kiekis:</label>
+        <select name="amount" if="amount" required>
+          <option label="---"></option>
+          <optgroup label="Asmeninis">
+            <option label="I class" value="I class">I class</option>
+            <option label="II class" value="II class">II class</option>
+          </optgroup>
+          <optgroup label="Seimos">
+            <option label="3 asmenu" value="3 asmenu">3 asmenu</option>
+            <option label="4 asmenu" value="4 asmenu">4 asmenu</option>
+          </optgroup>
+          <optgroup label="Grupes">
+            <option label="6 asmenu" value="6 asmenu">6 asmenu</option>
+            <option label="7 asmenu" value="7 asmenu">7 asmenu</option>
+          </optgroup>
+        </select>
+        <label>Keliones tipas:</label>
+        <select name="type" if="type" required>
+          <option label="---"
+          <optgroup label="Poilsine">
+            <option label="all inclusive" value="all inclusive">
+              all inclusive
+            </option>
+            <option label="ultra all inclusive" value="ultra all inclusive">
+              ultra all inclusive
+            </option>
+          </optgroup>
+          <optgroup label="Edukacine">
+            <option
+              label="ekskursijos iskaiciuotos"
+              value="ekskursijos iskaiciuotos"
+            >
+              ekskursijos iskaiciuotos
+            </option>
+            <option
+              label="ekskursijos neiskaiciuotos"
+              value="ekskursijos neiskaiciuotos"
+            >
+              ekskursijos neiskaiciuotos
+            </option>
+          </optgroup>
+          <optgroup label="Laisvo tipazo">
+            <option
+              label="autobusas is oro uosto"
+              value="autobusas is oro uosto"
+            >
+              autobusas is oro uosto
+            </option>
+            <option
+              label="autom su asm. vairuotoju"
+              value="autom su asm. vairuotoju"
+            >
+              autom su asm. vairuotoju
+            </option>
+          </optgroup>
+        </select>
+      </div>
+      <div>
+        <label for="start">Keliones pradzios data:</label>
+
+        <input
+          type="date"
+          id="start"
+          name="trip-start"
+          value="----/--/--"
+          min="2023-09-23"
+          max="2024-12-31"
+          required
+        />
+        <label for="papildomi pasirinkimai:" id="papildomi pasirinkimai:">papildomi pasirinkimai::<Slabel>
+    <input type="checkbox" name="suo" id="suo">
+    <label for="suo" id="suo">Suo</label>
+    <input type="checkbox" name="kate" id="kate">
+    <label for="kate" id="kate">Kate</label>
+    <input type="checkbox" name="papildomas bagazas" id="papildomas bagazas">
+    <label for="papildomas bagazas" id="papildomas bagazas">Papildomas bagazas</label>
+    <input type="checkbox" name="maitinimas" id="maitinimas">
+    <label for="maitinimas" id="maitinimas">Maitinimas skrydzio metu</label>
+      </div>
+      <div>
+        <label for="pastabos">Pageidavimai:</label>
+        <textarea
+          id="pastabos"
+          name="pastabos"
+          rows="10"
+          cols="20"
+          placeholder="Papildomu pageidavimu laukelis"
+        ></textarea>
+      </div>
+      <div>
+        <button type="confirm">Pateikti</button>
+      </div>
+    </form>
     <footer class="footer">
       <div id="Kontaktai"></div>
       <small>
